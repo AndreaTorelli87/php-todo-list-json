@@ -14,7 +14,10 @@
          <div class="w-50 p-5 m-5">
             <h1 class="display-2 fw-bold text-danger text-center">ToDo List php</h1>
             <ul class="list-group py-5">
-               <li v-for="todo in todoList" class="list-group-item display-6 fw-bold text-warning">{{ todo }}</li>
+               <li v-for="todo in todoList"
+                  class="list-group-item display-6 fw-bold text-warning"
+                  :class="{'bg-danger' : todo.done}"
+                  >{{ todo.cosa }}</li>
             </ul>
             <div class="input-group d-flex justify-content-center">
                <input type="text" name="input" v-model="todo" @keyup.enter="addTodo" placeholder="Scrivi qualcosa da fare...">
