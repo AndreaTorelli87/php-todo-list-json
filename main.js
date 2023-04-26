@@ -23,14 +23,7 @@ createApp({
             this.todoList = response.data;
             this.todo = "";
          });
-      },
-      // completaAttivita() {
-      //    if (this.todo == "false") {
-      //       this.todo == true
-      //    } else {
-      //       this.todo == false
-      //    }
-      // }
+      }
    },
    mounted() {
       this.importaLista()
